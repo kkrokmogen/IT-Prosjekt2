@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: rgb(57, 91, 79, 0.50);
+  font-family: 'Open Sans', sans-serif; 
+}
+
+.footer {
+  position: absolute;
+  padding-top: 20px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: 13%;
+  line-height: 30px;
+  background-color: white;
+  text-align: center;
+}

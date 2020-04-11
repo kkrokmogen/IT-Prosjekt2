@@ -1,0 +1,17 @@
+.logo{
+    height: 130%;
+}
+.navbar.navbar-default{
+    background-color: white;
+  }
+  
+.nav.navbar-nav li a{
+    /*background-color:blue;*/
+    color: #37515A;
+    width: 100%;
+  }
+  
+  .navbar-default .navbar-nav>.active>a {
+    background-color:#09578B;
+    border-right: none;
+  }
