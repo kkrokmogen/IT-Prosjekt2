@@ -11,6 +11,14 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductDevComponent } from './services/product-dev/product-dev.component';
 import { ProductGroupComponent } from './services/product-group/product-group.component';
 import { ContainerComponent } from './services/container/container.component';
+import { DropdownDirective } from './shared/dropdown.directive';
+import { ContainerListComponent } from './services/container/container-list/container-list.component';
+import { ContainerItemComponent } from './services/container/container-list/container-item/container-item.component';
+import { ServiceService } from './services/service.service';
+import { ServiceListComponent } from './services/service-list/service-list.component';
+import { ServiceItemComponent } from './services/service-list/service-item/service-item.component';
+import { ServiceDetailComponent } from './services/service-detail/service-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +29,13 @@ import { ContainerComponent } from './services/container/container.component';
     FooterComponent,
     ProductDevComponent,
     ProductGroupComponent,
-    ContainerComponent
+    ContainerComponent,
+    DropdownDirective,
+    ContainerListComponent,
+    ContainerItemComponent,
+    ServiceListComponent,
+    ServiceItemComponent,
+    ServiceDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +43,7 @@ import { ContainerComponent } from './services/container/container.component';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

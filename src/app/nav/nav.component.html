@@ -5,26 +5,34 @@
             <button type="button" class="navbar-toggle" (click)="collapse = !collapse">
               <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
             </button>
-            <a href="/hjem" class="navbar-brand"> <img src="../assets/images/logo.png" class="logo" alt="Logo"></a>
+            <a href="/" class="navbar-brand"> <img src="../assets/images/logo.png" class="logo" alt="Logo"></a>
           </div>
           <div class="navbar-collapse" [class.collapse]="collapse" (window:resize)="collapse=true">
             
             <!--Dette er eventuelt hvis vi skal ha admin eller noe bare å legge inn hvis dere vil teste den-->
             <ul class="nav navbar-nav navbar-right">  
-                <li><a href="/hjem"style="cursor: pointer;" class = "dropdown" role="button">Hjem </a></li>
-                <li><a style="cursor: pointer;" class = "dropdown" role="button">Om oss </a></li>
-                
-                <li class="dropdown" appDropdown >
-                    <a href="/tjenester"style="cursor: pointer;"class="dropdown-toogle" role="button" dropdown-toggle> Tjenester <span class="caret"></span></a>
+                <li routerLinkActive="active"><a routerLink="/hjem" style="cursor: pointer;" class="dropdown" role="button">Hjem </a></li>
+                <li><a routerLink="/hjem" style="cursor: pointer;" class="dropdown" role="button">Om oss </a></li>
+
+
+                <li routerLinkActive="active" 
+                class="dropdown" appDropdown>
+                    <a
+                    routerLink="/tjenester"
+                    style="cursor: pointer;" 
+                    class="dropdown-toogle" 
+                    role="button"> Tjenester 
+                    <span class="caret"></span></a>
+                    
                     <ul class="dropdown-menu">
-                        <li><a href="/produktutvikling" style="cursor: pointer;">Produktutvikling</a></li>
-                        <li><a href="/produktgrupper" style="cursor: pointer;">Produktgrupper</a></li>
-                        <li><a href="/forpakninger"style="cursor: pointer;">Forpakninger</a></li>
+                        <li><a style="cursor: pointer;">Produktutvikling</a></li>
+                        <li><a style="cursor: pointer;">Produktgrupper</a></li>
+                        <li><a style="cursor: pointer;">Forpakninger</a></li>
 
                     </ul>
                 </li>
                 
-                <li><a style="cursor: pointer;" class = "dropdown" role="button">Kontakt </a></li>
+                <li><a routerLink="/hjem" style="cursor: pointer;" class = "dropdown" role="button">Kontakt </a></li>
             </ul>
 
         </div>
