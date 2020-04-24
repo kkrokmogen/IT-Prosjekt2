@@ -18,4 +18,9 @@ section {
 
 .container {
     font-display: left;
+    margin: 2em;
+    column-count: 2;
+    column-gap: 2em;
+    column-width: 2;
+
 }
