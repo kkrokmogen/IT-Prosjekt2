@@ -15,13 +15,11 @@ const appRoutes: Routes = [
     { path: 'kontakt', component: ContactComponent },
     { path: 'tjenester', component: ServicesComponent , 
     children: [
-        {
-            path: ':id', component: ServiceDetailComponent},
+        //{     path: ':id', component: ServiceDetailComponent},
 
-        /*{path: 'produktutvikling', component: ProductDevComponent},
+        {path: 'produktutvikling', component: ProductDevComponent},
         {path: 'produktgrupper', component: ProductGroupComponent},
         {path: 'forpakning', component: ContainerComponent},
-*/
     ] },
 ]; 
 

@@ -1,10 +1,8 @@
-<p>container-list works!</p>
-
+<!-- <p>container-list works!</p>
+ -->
 <div class="row">
     <div class="col-xs-12">
-        <app-container-item
-        *ngFor="let serviceEl of services; let i = index"
-        [service]="serviceEl"
-        [index]="i"></app-container-item>
+        <app-container-item *ngFor="let serviceEl of services; let i = index" [service]="serviceEl" [index]="i">
+        </app-container-item>
     </div>
 </div>

@@ -1,0 +1,8 @@
+.menu {
+    display: flex;
+}
+
+.nav-item {
+    padding:  5px;
+    font-size: 20px;      
+}
