@@ -1,26 +1,24 @@
-body {
-    margin:0;
+.wrapper {
+    margin:2em;
     font-family: 'montserrat', sans-serif;
-    
+    color: white;
 }
 
 .container-overskrift {
     font-size: 2em;
-    text-align: center;
+    text-align: left;
+    margin: 2em;
 
 }
-
-section {
-    background-color:  rgba(94, 125, 114, 0.5);opacity: 1.56;
-    height: 20em;
     
+.avsnitt {
+    width: 100%;
 }
+
 
 .container {
     font-display: left;
     margin: 2em;
-    column-count: 2;
-    column-gap: 2em;
-    column-width: 2;
+   
 
 }
