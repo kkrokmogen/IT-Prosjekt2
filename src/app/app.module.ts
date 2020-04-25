@@ -18,6 +18,7 @@ import { UndercatItemComponent } from './services/undercat-list/undercat-item/un
 import { UndercatDetailComponent } from './services/undercat-detail/undercat-detail.component';
 import { UndercatStartComponent } from './services/undercat-start/undercat-start.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ContactComponent } from './contact/contact.component';
     UndercatItemComponent,
     UndercatDetailComponent,
     UndercatStartComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
