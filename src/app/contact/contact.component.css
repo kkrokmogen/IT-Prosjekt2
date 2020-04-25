@@ -1,0 +1,26 @@
+body {
+    margin:0;
+    font-family: 'montserrat', sans-serif;
+    
+}
+
+.container-overskrift {
+    font-size: 2em;
+    text-align: center;
+
+}
+
+section {
+    background-color:  rgba(94, 125, 114, 0.5);opacity: 1.56;
+    height: 20em;
+    
+}
+
+.container {
+    font-display: left;
+    margin: 2em;
+    column-count: 2;
+    column-gap: 2em;
+    column-width: 2;
+
+}
