@@ -30,16 +30,4 @@ export class NavComponent {
     }
     );
   }
-
-  onProdDev(){
-    this.router.navigate(['/produktutvikling'])
-  }
-
-  onProdGroup(){
-    this.router.navigate(['/produktgrupper'])
-  }
-
-  onContainer(){
-    this.router.navigate(['/forpakning'])
-  }
 }

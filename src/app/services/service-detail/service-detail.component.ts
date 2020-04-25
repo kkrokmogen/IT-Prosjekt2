@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Service } from '../service.model';
 import { ServiceService } from '../service.service';
 import { ActivatedRoute, Router, Params } from '@angular/router';
+import { ServiceUnderCat } from '../service-undercat.model';
 
 @Component({
   selector: 'app-service-detail',
@@ -9,19 +10,18 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
   styleUrls: ['./service-detail.component.css']
 })
 export class ServiceDetailComponent implements OnInit {
-  recipe: Service;
+  service: Service;
   id:number;
 
   constructor(private serviceService: ServiceService,
-    private route: ActivatedRoute,
-    private router: Router) { }
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params
       .subscribe(
         (params: Params) => {
           this.id = +params['id'];
-          this.recipe = this.serviceService.getService(this.id);
+          this.service = this.serviceService.getService(this.id);
         }
       );
   }

@@ -3,23 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
-import { ProductDevComponent } from './services/product-dev/product-dev.component';
-import { ProductGroupComponent } from './services/product-group/product-group.component';
-import { ContainerComponent } from './services/container/container.component';
 import { ServiceDetailComponent } from './services/service-detail/service-detail.component';
+import { UndercatStartComponent } from './services/undercat-start/undercat-start.component';
+import { UndercatDetailComponent } from './services/undercat-detail/undercat-detail.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/hjem', pathMatch: 'full'},
     { path: 'hjem', component: HomeComponent },
-    { path: 'tjenester', component: ServicesComponent , 
-    children: [
-        {
-            path: ':id', component: ServiceDetailComponent},
-
-        /*{path: 'produktutvikling', component: ProductDevComponent},
-        {path: 'produktgrupper', component: ProductGroupComponent},
-        {path: 'forpakning', component: ContainerComponent},
-*/
+    { path: 'tjenester', component: ServicesComponent , children: [
+        {path: ':id', component: ServiceDetailComponent, children: [
+            {path:'', component: UndercatStartComponent},
+            {path: ':id', component:UndercatDetailComponent}
+        ]},
     ] },
 ]; 
 

@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-xs-8">
+        <app-undercat-item
+        *ngFor="let underkat of service.undercat; let x = index"
+        [service]="underkat"
+        [index]="x"></app-undercat-item>
+    </div>
+</div>

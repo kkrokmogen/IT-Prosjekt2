@@ -9,6 +9,7 @@
     /*background-color:blue;*/
     color: #37515A;
     width: 100%;
+    text-transform: uppercase;
   }
   
   .navbar-default .navbar-nav>.active>a {

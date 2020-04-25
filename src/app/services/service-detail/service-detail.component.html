@@ -1,13 +1,11 @@
-<p>service-detail works!</p>
-
 <div class="row">
-    <div class="col-xs-12">
-        <h1>{{ recipe.name }}</h1>  
+    <div class="col-md-12">
+        <app-undercat-list></app-undercat-list>
     </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        {{recipe.description}}
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-5">
+      <router-outlet></router-outlet>
     </div>
-</div>
+  </div>

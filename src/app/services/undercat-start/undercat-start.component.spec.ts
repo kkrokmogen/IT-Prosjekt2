@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProductGroupComponent } from './product-group.component';
+import { UndercatStartComponent } from './undercat-start.component';
 
-describe('ProductGroupComponent', () => {
-  let component: ProductGroupComponent;
-  let fixture: ComponentFixture<ProductGroupComponent>;
+describe('UndercatStartComponent', () => {
+  let component: UndercatStartComponent;
+  let fixture: ComponentFixture<UndercatStartComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductGroupComponent ]
+      declarations: [ UndercatStartComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProductGroupComponent);
+    fixture = TestBed.createComponent(UndercatStartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
