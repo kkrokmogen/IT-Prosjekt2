@@ -14,4 +14,6 @@
   
   .navbar-default .navbar-nav>.active>a {
     border-right: none;
+    text-decoration: underline;
+    background-color: transparent;
   }

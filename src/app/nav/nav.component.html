@@ -8,12 +8,11 @@
           </div>
           <div class="navbar-collapse" [class.collapse]="collapse" (window:resize)="collapse=true">
             
-            <!--Dette er eventuelt hvis vi skal ha admin eller noe bare å legge inn hvis dere vil teste den-->
             <ul class="nav navbar-nav navbar-right">  
-                <li routerLinkActive="active"><a routerLink="/hjem" style="cursor: pointer;" class="dropdown" role="button">Hjem </a></li>
-                <li routerLinkActive="active"><a routerLink="/tjenester" style="cursor: pointer;" class="dropdown" role="button">Tjenester </a></li>
-                <li routerLinkActive="active"><a routerLink="/om-oss" style="cursor: pointer;" class="dropdown" role="button">Om oss </a></li>
-
+                <li routerLinkActive="active"><a routerLink="tjenester" style="cursor: pointer;" class="dropdown" role="button">Tjenester </a></li>
+                <li routerLinkActive="active"><a routerLink="om-oss" style="cursor: pointer;" class="dropdown" role="button">Om oss </a></li>
+                <li routerLinkActive="active"><a routerLink="/kontakt" style="cursor: pointer;" class = "dropdown" role="button">Kontakt </a></li>
+           
 
 <!--              <li routerLinkActive="active" 
                 class="dropdown" appDropdown>
@@ -38,7 +37,7 @@
                     </ul>
                 </li>-->  
                 
-                <li routerLinkActive="active"><a routerLink="/kontakt" style="cursor: pointer;" class = "dropdown" role="button">Kontakt </a></li>
+           
             </ul>
 
         </div>

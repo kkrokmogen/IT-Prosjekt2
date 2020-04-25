@@ -10,7 +10,7 @@ import { UndercatDetailComponent } from './services/undercat-detail/undercat-det
 import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: '/hjem', pathMatch: 'full'},
+    { path: '', redirectTo: 'hjem', pathMatch: 'full'},
     { path: 'hjem', component: HomeComponent },
     { path: 'tjenester', component: ServicesComponent , children: [
         {path: ':id', component: ServiceDetailComponent, children: [
