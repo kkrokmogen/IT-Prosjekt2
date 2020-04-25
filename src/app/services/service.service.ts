@@ -8,26 +8,35 @@ export class ServiceService {
     private services: Service[] = [
         new Service(
             'Produktutvikling', 
-            'Flasker er bra', 
             [ 
-                new ServiceUnderCat('Utvikling', 'Utvikling er bra'),
-                new ServiceUnderCat('Vegansk', 'Vegansk er bra')
+                new ServiceUnderCat('Reseptutvikling', 'Utvikling er bra'),
+                new ServiceUnderCat('Smak', 'Utvikling er bra'),
+                new ServiceUnderCat('Økologiske', 'Vegansk er bra'),
+                new ServiceUnderCat('Ideprosess', 'Utvikling er bra'),
+                new ServiceUnderCat('Vegansk', 'Vegansk er bra'),
             ]
         ),
         new Service(
             'Produktgrupper', 
-            'Bokser er bra', 
             [ 
-                new ServiceUnderCat('Pulver', 'Pulver er bra'),
-                new ServiceUnderCat('Krem', 'Krem er bra')
+                new ServiceUnderCat('Tabletter', 'Pulver er bra'),
+                new ServiceUnderCat('Harde kapsler', 'Krem er bra'),
+                new ServiceUnderCat('Myke kapsler', 'Pulver er bra'),
+                new ServiceUnderCat('Pulver', 'Krem er bra'),
+                new ServiceUnderCat('Kremer', 'Krem er bra'),
+                new ServiceUnderCat('Flytende vannløselig', 'Pulver er bra'),
+                new ServiceUnderCat('Flytende oljebasert', 'Krem er bra'),
             ]
         ),
         new Service(
             'Forpakning', 
-            'Blister er bra', 
             [ 
+                new ServiceUnderCat('Flasker', 'Flasker er bra'),
                 new ServiceUnderCat('Poser', 'poser er bra'),
-                new ServiceUnderCat('Flasker', 'Flasker er bra')
+                new ServiceUnderCat('Bokser', 'Flasker er bra'),
+                new ServiceUnderCat('Blister', 'poser er bra'),
+
+                
             ]
         ),    
     ];
