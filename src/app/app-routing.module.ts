@@ -11,13 +11,13 @@ import { UndercatDetailComponent } from './services/undercat-detail/undercat-det
 const appRoutes: Routes = [
     { path: '', redirectTo: '/hjem', pathMatch: 'full'},
     { path: 'hjem', component: HomeComponent },
-    { path: 'kontakt', component: ContactComponent },
     { path: 'tjenester', component: ServicesComponent , children: [
         {path: ':id', component: ServiceDetailComponent, children: [
             {path:'', component: UndercatStartComponent},
             {path: ':id', component:UndercatDetailComponent}
         ]},
     ] },
+    { path: 'kontakt', component: ContactComponent },
 ]; 
 
 @NgModule({
