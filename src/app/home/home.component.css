@@ -1,4 +1,13 @@
 img{
-    width: 100%;
-    
+    width: 100%; 
+}
+.logoboks {
+    width:100%;
+    background-color: red;
+    color:#fff;
+    /*padding: 4em 0 2em;*/
+
+}
+.logo{
+    width: 70px;
 }
