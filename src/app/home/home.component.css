@@ -1,13 +1,42 @@
-img{
+.background-image {
+    position: relative;
+}
+
+.background-image span {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: #fff;
+    font-size:calc(17px + 1.5vw);
+}
+
+.background-image img{
     width: 100%; 
+    min-height: 60vh;
+    object-fit: cover;
+
 }
 .logoboks {
     width:100%;
-    background-color: red;
+    background-color: #718C80;
     color:#fff;
-    /*padding: 4em 0 2em;*/
-
-}
+    padding-top: 20px;
+} 
 .logo{
     width: 70px;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3A525B;
+    opacity: 0.8;
+    clip-path: polygon(0% 100%,140% 100%, 0% 60%);
 }

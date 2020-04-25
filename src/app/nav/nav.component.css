@@ -1,6 +1,10 @@
 .logo{
     height: 130%;
 }
+
+.navbar {
+  margin-bottom: 0;
+}
 .navbar.navbar-default{
     background-color: white;
   }
