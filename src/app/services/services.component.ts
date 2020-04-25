@@ -25,17 +25,4 @@ export class ServicesComponent implements OnInit {
     }
     );
   }
-
-  onProdDev(){
-    this.router.navigate(['tjenester/produktutvikling'])
-  }
-
-  onProdGroup(){
-    this.router.navigate(['tjenester/produktgrupper'])
-  }
-
-  onContainer(){
-    this.router.navigate(['tjenester/forpakning'])
-  }
-
 }
