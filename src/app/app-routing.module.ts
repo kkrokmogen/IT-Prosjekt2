@@ -7,6 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { ServiceDetailComponent } from './services/service-detail/service-detail.component';
 import { UndercatStartComponent } from './services/undercat-start/undercat-start.component';
 import { UndercatDetailComponent } from './services/undercat-detail/undercat-detail.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/hjem', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
             {path: ':id', component:UndercatDetailComponent}
         ]},
     ] },
+    { path: 'om-oss', component: AboutComponent },
     { path: 'kontakt', component: ContactComponent },
 ]; 
 
