@@ -3,6 +3,7 @@ import { Service } from '../service.model';
 import { ServiceService } from '../service.service';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Subscription } from 'rxjs/internal/Subscription';
+import { ServiceUnderCat } from '../service-undercat.model';
 
 @Component({
   selector: 'app-service-detail',
@@ -10,13 +11,13 @@ import { Subscription } from 'rxjs/internal/Subscription';
   styleUrls: ['./service-detail.component.css']
 })
 export class ServiceDetailComponent implements OnInit {
-  @Input() service: Service;
+  @Input() undercat: ServiceUnderCat;
   @Input() index: number;
 
   id:number;
 
 
-  //service: Service;
+  service: Service;
   //services: Service[];
   
   subscription: Subscription;

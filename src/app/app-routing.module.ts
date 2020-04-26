@@ -8,18 +8,16 @@ import { ServiceDetailComponent } from './services/service-detail/service-detail
 import { UndercatStartComponent } from './services/undercat-start/undercat-start.component';
 import { UndercatDetailComponent } from './services/undercat-detail/undercat-detail.component';
 import { AboutComponent } from './about/about.component';
+import { ServiceComponent } from './services/service/service.component';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: 'hjem', pathMatch: 'full'},
-    { path: 'hjem', component: HomeComponent },
+    //{ path: '', redirectTo: 'hjem', pathMatch: 'full'},
+    { path: '', component: HomeComponent },
     { path: 'tjenester', component: ServicesComponent, children: [
-        {path: ':id', component: ServiceDetailComponent},
-        {path: ':id/:name', component: UndercatDetailComponent}
-        
-        /*, children: [
+        {path: ':id', component: ServiceDetailComponent, children: [
             {path:'', component: UndercatStartComponent},
-            {path: ':name', component:UndercatDetailComponent}
-        ]},*/
+            {path: ':id', component:UndercatDetailComponent}
+        ]}
     ]},
     { path: 'om-oss', component: AboutComponent },
     { path: 'kontakt', component: ContactComponent },

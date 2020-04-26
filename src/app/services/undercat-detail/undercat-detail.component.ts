@@ -13,19 +13,19 @@ import { Subscription } from 'rxjs/internal/Subscription';
 })
 export class UndercatDetailComponent implements OnInit {
   recipe: ServiceUnderCat;
-  service: ServiceUnderCat;
+  service: Service;
   id:number;
 
-  undercat: {name: string};
+  /*undercat: {name: string};
   paramsSubscription: Subscription;
-
+*/
   
   constructor(private serviceService: ServiceService,
     private route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit(): void {
-    this.undercat = {
+    /*this.undercat = {
       name: this.route.snapshot.params['name']
     };
     this.paramsSubscription = this.route.params
@@ -33,16 +33,16 @@ export class UndercatDetailComponent implements OnInit {
         (params: Params) => {
           this.undercat.name = params['name'];
         }
-      );}
+      );}*/
 
 
-    /*this.route.params
+    this.route.params
     .subscribe(
       (params: Params) => {
         this.id = +params['id'];
         this.recipe = this.serviceService.getUnderCat(this.id)
       }
     );
-  }*/
+  }
 
 }
