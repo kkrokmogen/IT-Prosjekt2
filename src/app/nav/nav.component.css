@@ -4,6 +4,7 @@
 
 .navbar {
   margin-bottom: 0;
+  border-radius: unset;
 }
 .navbar.navbar-default{
     background-color: white;
