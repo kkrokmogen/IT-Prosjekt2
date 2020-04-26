@@ -1,7 +1,6 @@
 .avsnitt{
     color: white;
-    margin-top: 2em;
-    margin-left: 2em;;
+
 }
 
 .tekstinfo{
@@ -16,4 +15,11 @@
 .slagord{
     margin-top: 2em;
     font-size: 2em;;
+}
+
+.container{
+    background-color: green;
+    clip-path: polygon(107% -16%,-330% -1%, 33% 110%);
+
+    
 }
