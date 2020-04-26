@@ -9,32 +9,31 @@ export class ServiceService {
         new Service(
             'Produktutvikling', 
             [ 
-                new ServiceUnderCat('Reseptutvikling', 'Utvikling er bra'),
-                new ServiceUnderCat('Smak', 'Utvikling er bra'),
-                new ServiceUnderCat('Økologiske', 'Vegansk er bra'),
-                new ServiceUnderCat('Ideprosess', 'Utvikling er bra'),
+                new ServiceUnderCat('Reseptutvikling', 'Reseptutvikling er bra'),
+                new ServiceUnderCat('Smak', 'Smak er bra'),
+                new ServiceUnderCat('Økologiske', 'Økologiske er bra'),
+                new ServiceUnderCat('Ideprosess', 'Ideprosess er bra'),
                 new ServiceUnderCat('Vegansk', 'Vegansk er bra'),
             ]
         ),
         new Service(
             'Produktgrupper', 
             [ 
-                new ServiceUnderCat('Tabletter', 'Pulver er bra'),
-                new ServiceUnderCat('Harde kapsler', 'Krem er bra'),
-                new ServiceUnderCat('Myke kapsler', 'Pulver er bra'),
-                new ServiceUnderCat('Pulver', 'Krem er bra'),
-                new ServiceUnderCat('Kremer', 'Krem er bra'),
-                new ServiceUnderCat('Flytende vannløselig', 'Pulver er bra'),
-                new ServiceUnderCat('Flytende oljebasert', 'Krem er bra'),
+                new ServiceUnderCat('Tabletter', 'Tabletter er bra'),
+                new ServiceUnderCat('Harde kapsler', 'Harde kapsler er bra'),
+                new ServiceUnderCat('Myke kapsler', 'Myke kapsler er bra'),
+                new ServiceUnderCat('Pulver', 'Pulver er bra'),
+                new ServiceUnderCat('Flytende vannløselig', 'Flytende vannløselig er bra'),
+                new ServiceUnderCat('Flytende oljebasert', 'Flytende oljebasert er bra'),
             ]
         ),
         new Service(
             'Forpakning', 
             [ 
                 new ServiceUnderCat('Flasker', 'Flasker er bra'),
-                new ServiceUnderCat('Poser', 'poser er bra'),
-                new ServiceUnderCat('Bokser', 'Flasker er bra'),
-                new ServiceUnderCat('Blister', 'poser er bra'),
+                new ServiceUnderCat('Poser', 'Poser er bra'),
+                new ServiceUnderCat('Bokser', 'Bokser er bra'),
+                new ServiceUnderCat('Blister', 'Blister er bra'),
 
                 
             ]
