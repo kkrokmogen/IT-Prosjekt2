@@ -1,2 +1,12 @@
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+  }
+
+  .nav{
+      display: inline-flex;
+      max-width: 100%;
+  }
 
 

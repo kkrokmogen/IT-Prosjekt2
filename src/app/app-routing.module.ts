@@ -12,12 +12,15 @@ import { AboutComponent } from './about/about.component';
 const appRoutes: Routes = [
     { path: '', redirectTo: 'hjem', pathMatch: 'full'},
     { path: 'hjem', component: HomeComponent },
-    { path: 'tjenester', component: ServicesComponent , children: [
-        {path: ':id', component: ServiceDetailComponent, children: [
+    { path: 'tjenester', component: ServicesComponent, children: [
+        {path: ':id', component: ServiceDetailComponent},
+        {path: ':id/:name', component: UndercatDetailComponent}
+        
+        /*, children: [
             {path:'', component: UndercatStartComponent},
-            {path: ':id', component:UndercatDetailComponent}
-        ]},
-    ] },
+            {path: ':name', component:UndercatDetailComponent}
+        ]},*/
+    ]},
     { path: 'om-oss', component: AboutComponent },
     { path: 'kontakt', component: ContactComponent },
 ]; 

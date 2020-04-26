@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { ServiceService } from './service.service';
 import { Service } from './service.model';
+import { Subscription } from 'rxjs/internal/Subscription';
 
 @Component({
   selector: 'app-services',
@@ -9,20 +10,13 @@ import { Service } from './service.model';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
-  service: Service;
-  id: number;
+  services: Service[];
+  subscription: Subscription;
 
-  constructor(private serviceService: ServiceService,
-    private route: ActivatedRoute,
-    private router: Router) { }
+  constructor(private serviceService: ServiceService) { }
 
-  ngOnInit(): void {
-    this.route.params
-    .subscribe(
-    (params: Params) => {
-    this.id = +params['id'];
-    this.service = this.serviceService.getService(this.id);
-    }
-    );
+  ngOnInit() {
+    this.services = this.serviceService.getServices();
   }
+
 }
