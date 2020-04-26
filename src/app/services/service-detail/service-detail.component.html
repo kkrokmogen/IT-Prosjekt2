@@ -1,27 +1,8 @@
 <div class="row">
     <div class="col-md-2">
-      <!--<div >
-      <a 
-        [routerLink]="[index]"
-        style="cursor: pointer;"
-        class=""
-        *ngFor="let undercat of service.undercat"
-        >        
-        <div class="pull-left">
-            <h5>{{undercat.name}}</h5>
-        </div>
-</a>
-</div>-->
-
-      <app-undercat-item
-        *ngFor="let underkat of service.undercat; let i = index"
-        [service]="underkat"
-        [index]="i"></app-undercat-item>
-
-        <!--<app-undercat-list></app-undercat-list>-->
+        <app-undercat-list></app-undercat-list>
     </div>
     <div class="col-md-7">
       <router-outlet></router-outlet>
     </div>
   </div>
- 

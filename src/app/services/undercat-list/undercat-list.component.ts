@@ -3,7 +3,6 @@ import { ServiceService } from '../service.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Service } from '../service.model';
 import { Subscription } from 'rxjs';
-import { ServiceUnderCat } from '../service-undercat.model';
 
 @Component({
   selector: 'app-undercat-list',
@@ -11,6 +10,7 @@ import { ServiceUnderCat } from '../service-undercat.model';
   styleUrls: ['./undercat-list.component.css']
 })
 export class UndercatListComponent implements OnInit {
+  
   id:number;
   service: Service;
   services: Service[];

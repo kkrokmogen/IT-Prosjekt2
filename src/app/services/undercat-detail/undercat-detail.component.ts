@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Params, ActivatedRoute, Router } from '@angular/router';
 import { ServiceService } from '../service.service';
 import { Service } from '../service.model';
-import { UndercatStartComponent } from '../undercat-start/undercat-start.component';
-import { ServiceUnderCat } from '../service-undercat.model';
+import { ServiceUnderCat } from '../service.model';
 import { Subscription } from 'rxjs/internal/Subscription';
 
 @Component({
@@ -40,7 +39,7 @@ export class UndercatDetailComponent implements OnInit {
     .subscribe(
       (params: Params) => {
         this.id = +params['id'];
-        this.recipe = this.serviceService.getUnderCat(this.id)
+        this.recipe = this.serviceService.getUnderCat(this.id);
       }
     );
   }

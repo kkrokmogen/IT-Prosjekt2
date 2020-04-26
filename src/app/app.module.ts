@@ -12,9 +12,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { ServiceService } from './services/service.service';
 import { ServiceDetailComponent } from './services/service-detail/service-detail.component';
 import { UndercatListComponent } from './services/undercat-list/undercat-list.component';
-import { UndercatItemComponent } from './services/undercat-list/undercat-item/undercat-item.component';
 import { UndercatDetailComponent } from './services/undercat-detail/undercat-detail.component';
-import { UndercatStartComponent } from './services/undercat-start/undercat-start.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './services/service/service.component';
@@ -30,12 +28,11 @@ import { ServiceComponent } from './services/service/service.component';
     DropdownDirective,
     ServiceDetailComponent,
     UndercatListComponent,
-    UndercatItemComponent,
     UndercatDetailComponent,
-    UndercatStartComponent,
     ContactComponent,
     AboutComponent,
-    ServiceComponent
+    ServiceComponent,
+
   ],
   imports: [
     BrowserModule,

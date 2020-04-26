@@ -1,8 +1,22 @@
 <div class="row">
     <div class="col-xs-12">
-        <app-undercat-item
+        <a 
+        *ngFor="let underkat of service.undercat; let x = index"
+        style="cursor: pointer;"
+        [routerLink]="[x]"
+        routerLinkActive="active"
+        class="">
+            <div class="pull-left">
+                <h5>{{underkat.name}}</h5>
+            </div>
+        </a>
+
+        <!--<app-undercat-item
         *ngFor="let underkat of service.undercat; let x = index"
         [service]="underkat"
-        [index]="x"></app-undercat-item>
+        [index]="x"></app-undercat-item>-->
+        <div class="col-xs-5">
+           
+        </div>
     </div>
 </div>

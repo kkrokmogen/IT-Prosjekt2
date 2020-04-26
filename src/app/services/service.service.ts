@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Service } from './service.model';
-import { ServiceUnderCat } from './service-undercat.model';
+import { ServiceUnderCat } from './service.model';
 
 @Injectable()
 export class ServiceService {

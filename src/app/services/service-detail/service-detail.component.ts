@@ -3,7 +3,7 @@ import { Service } from '../service.model';
 import { ServiceService } from '../service.service';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Subscription } from 'rxjs/internal/Subscription';
-import { ServiceUnderCat } from '../service-undercat.model';
+import { ServiceUnderCat } from '../service.model';
 
 @Component({
   selector: 'app-service-detail',
