@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-3 col-sm-4">
+        <app-undercat-list *ngFor="let item of listItems" [listName]="item" [itemActive]="activeItem === item"
+            (onOpen)="openItem($event)">
+        </app-undercat-list>
+    </div>
+    <div class="col-md-4 col-sm-8">
+        <app-product-development-info [itemSet]="activeItem"></app-product-development-info>
+    </div>
+    
+</div>

@@ -1,10 +1,43 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Optipharma AS';
+export class AppComponent implements OnInit {
+    constructor(private router: Router) { }
+
+    public title = 'Optipharma AS';
+    public activeUrl: string = '';
+    public backGroundClass: string = '';
+    public bgOpacity: boolean = false;
+
+    public getBackgroundClass() {
+        this.bgOpacity = false;
+        if (this.activeUrl.includes('forpakning')) {
+            this.backGroundClass = 'default';
+        } else if (this.activeUrl.includes('produktgrupper')) {
+            this.backGroundClass = 'default';
+        } else if (this.activeUrl.includes('om-oss')) {
+            this.backGroundClass = 'bg-about';
+            this.bgOpacity = true;
+        } else if (this.activeUrl.includes('produktutvikling')) {
+            this.backGroundClass = 'bg-produktutvikling';
+            this.bgOpacity = true;
+        } else {
+            this.backGroundClass = '';
+        }
+    }
+
+    public ngOnInit() {
+        this.router.events.subscribe((event) => {
+            if (event instanceof NavigationEnd) {
+                this.activeUrl = this.router.url;
+                this.getBackgroundClass();
+                console.log(this.activeUrl);
+            }
+        });
+    }
 }

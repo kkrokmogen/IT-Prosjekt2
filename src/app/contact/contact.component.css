@@ -1,31 +1,26 @@
 .wrapper {
-    margin:2em;
     font-family: 'montserrat', sans-serif;
     color: white;
+    font-display: left;
+    padding: 2em;
+    background-color: #718C80;
+    height: 100%;
 }
 
 .container-overskrift {
     font-size: 2em;
     text-align: left;
     margin-bottom: 2em;;
-
-
 }
     
 .avsnitt {
     width: 100%;
 }
 
-
-.container {
-    font-display: left;
-    margin: 2em;
-   
-
-}
 .overskrift{
     font-weight: bold;
 }
+
 iframe{
     object-position: right;
 }

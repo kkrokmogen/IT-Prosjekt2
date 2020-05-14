@@ -1,25 +1,25 @@
 .avsnitt{
     color: white;
-
+    padding-left: 2em;
 }
 
 .tekstinfo{
-    margin-top: 4em;
+    padding-top: 2em;
 }
 
 .container-overskrift{
-    font-size: 5em;
-
+    font-size: 4em;
+    color: white;
+    padding-left: 0.4em;
+    padding-top: 0.2em;
 }
 
 .slagord{
     margin-top: 2em;
-    font-size: 2em;;
+    font-size: 2em;
 }
 
-.container{
-    background-color: green;
-    clip-path: polygon(107% -16%,-330% -1%, 33% 110%);
-
-    
+.innhold{
+    background-color:  #718C80; 
+    height: calc(100vh - 50px);
 }

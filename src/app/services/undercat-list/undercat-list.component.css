@@ -4,18 +4,15 @@ a{
     text-transform: uppercase;
     display: grid;
     padding-left: 1em;
+    cursor: pointer;
 }
 
-a:active{
+.active {
     background-color: #3A525B;
     border-radius: 0;
     border-color: transparent;
-    
 }
 
-a:hover{
-    background-color: transparent;
-}
 .col-md-7{
     background-color: #3A525B;
     border-radius: 0;

@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-3 col-sm-4">
+    <app-undercat-list
+      *ngFor="let item of listItems"
+      [listName]="item"
+      [itemActive]="activeItem === item"
+      (onOpen)="openItem($event)"
+    >
+    </app-undercat-list>
+  </div>
+  <div class="col-md-4 col-sm-8">
+    <app-product-groups-info [itemSet]="activeItem"></app-product-groups-info>
+  </div>
+  <div class="bilder">
+    <img
+      *ngIf="activeItem === enum.Tabletter"
+      src="./../../../assets/images/produktgrupperBilder/tabletter/favicon.png">
+    />
+    <img
+      *ngIf="activeItem === enum.Oljer"
+      src="./../../../assets/images/produktgrupperBilder/olje/P1100009.png"
+    />
+    <img
+      *ngIf="activeItem === enum.Pulver"
+      src="./../../../assets/images/produktgrupperBilder/pulver/P1100158.png"
+    />
+    <img
+      *ngIf="activeItem === enum.Kapsler"
+      src="./../../../assets/images/produktgrupperBilder/kapsler/P1090892 uten bak.png"
+    />
+  </div>
+</div>

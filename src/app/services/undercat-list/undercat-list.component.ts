@@ -1,37 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { ServiceService } from '../service.service';
-import { Router, ActivatedRoute, Params } from '@angular/router';
-import { Service } from '../service.model';
-import { Subscription } from 'rxjs';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-undercat-list',
-  templateUrl: './undercat-list.component.html',
-  styleUrls: ['./undercat-list.component.css']
+	selector: 'app-undercat-list',
+	templateUrl: './undercat-list.component.html',
+	styleUrls: ['./undercat-list.component.css']
 })
-export class UndercatListComponent implements OnInit {
-  
-  id:number;
-  service: Service;
-  services: Service[];
-  subscription: Subscription;
+export class UndercatListComponent {
 
-  constructor(private serviceService: ServiceService,
-    private router: Router,
-    private route: ActivatedRoute) { }
+	@Output() public onOpen: EventEmitter<string> = new EventEmitter();
+	@Input() public listName: string;
+	@Input() public itemActive: boolean;
 
-    ngOnInit() {
-      this.route.params
-      .subscribe(
-        (params: Params) => {
-          this.id = +params['id'];
-          this.service = this.serviceService.getService(this.id);
-        }
-      );
-  }
-
-    ngOnDestroy(){
-      this.subscription.unsubscribe();
-    }
-
+	public openItem() {
+		this.onOpen.emit(this.listName);
+	}
 }

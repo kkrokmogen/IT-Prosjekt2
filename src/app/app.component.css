@@ -1,0 +1,43 @@
+.bg-main {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-forpakning {
+    background-image: url("../assets/images/forpakningerBilder/flasker/P1090347.png");
+    background-position: 20em;
+}
+
+.bg-produktgrupper {
+    background-image: url("../assets/images/produktgrupperBilder/tabletter/favicon.png");
+    background-position: 20em;
+    background-color: transparent;
+ 
+}
+
+.bg-produktutvikling {
+    background-image: url("../assets/images/produktutviklingBilder/P1100350.png");
+}
+
+.bg-about {
+    background-image: url("../assets/images/miljøBilder/P1090392.JPG");
+    background-size: cover;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-default);
+    height: 100%;
+}

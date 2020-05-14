@@ -1,11 +1,4 @@
 import { Component } from '@angular/core';
-import {  } from 'protractor';
-import { ActivatedRoute, Router, Params } from '@angular/router';
-import { Service } from '../services/service.model';
-import { ServiceService } from '../services/service.service';
-
-
-
 
 @Component({
   selector: 'app-nav',
@@ -13,21 +6,10 @@ import { ServiceService } from '../services/service.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-  collapse = true;
-  service: Service;
-  id:number;
+  public collapse: boolean = true;
+  public dropdownOpen: boolean = false;
 
-  constructor(private serviceService: ServiceService,
-    private route: ActivatedRoute,
-    private router: Router) { }
-
-  ngOnInit() {
-    this.route.params
-    .subscribe(
-    (params: Params) => {
-    this.id = +params['id'];
-    this.service = this.serviceService.getService(this.id);
-    }
-    );
+  public toggleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen;
   }
 }

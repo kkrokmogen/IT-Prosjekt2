@@ -1,5 +1,10 @@
+.main {
+    height: calc(100vh - 50px);
+}
+
 .background-image {
     position: relative;
+    height: 80%;
 }
 
 .background-image span {
@@ -8,20 +13,26 @@
     left: 30px;
     color: #fff;
     font-size:calc(17px + 1.5vw);
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 422px) {
+    .background-image span {
+        bottom: 20px;
+    }
 }
 
 .background-image img{
     width: 100%; 
-    min-height: 60vh;
+    height: 100%;
     object-fit: cover;
-
 }
 .logoboks {
     width:100%;
     background-color: #718C80;
     color:#fff;
     padding-top: 20px;
-    height:10em;
+    height: 20%;
 } 
 .logo{
     width: 70px;
