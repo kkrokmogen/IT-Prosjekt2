@@ -1,18 +1,33 @@
 <div class="row">
-<!-- <div class="bakgrunn pattern"></div> -->    
-<div class="col-md-3 col-sm-4">
-      <app-undercat-list *ngFor="let item of listItems" [listName]="item" [itemActive]="activeItem === item"
-          (onOpen)="openItem($event)">
-      </app-undercat-list>
-  </div>
-  <div class="col-md-4 col-sm-8">
-      <app-packaging-info [itemSet]="activeItem"></app-packaging-info>
-  </div>
-  <div class="bilder">
-    <img *ngIf="activeItem === enum.Flasker" src="./../../../assets/images/forpakningerBilder/flasker/P1090347.png">
-    <img *ngIf="activeItem === enum.Poser" src="./../../../assets/images/forpakningerBilder/poser/P1100097.png">
-    <img *ngIf="activeItem === enum.Bokser" src="./../../../assets/images/forpakningerBilder/bokser/P1090244.png">
-    <img *ngIf="activeItem === enum.Blister" src="./../../../assets/images/forpakningerBilder/blister/P10908592.png">
-    
-</div>
+    <!-- <div class="bakgrunn pattern"></div> -->
+    <div class="col-md-3 col-sm-4">
+        <app-undercat-list
+            *ngFor="let item of listItems"
+            [listName]="item"
+            [itemActive]="activeItem === item"
+            (onOpen)="openItem($event)"
+        >
+        </app-undercat-list>
+    </div>
+    <div class="col-md-4 col-sm-8">
+        <app-packaging-info [itemSet]="activeItem"></app-packaging-info>
+    </div>
+    <div class="bilder">
+        <img
+            *ngIf="activeItem === enum.Flasker"
+            src="./../../../assets/images/forpakningerBilder/flasker/P1090347.png"
+        />
+        <img
+            *ngIf="activeItem === enum.Poser"
+            src="./../../../assets/images/forpakningerBilder/poser/P1100097.png"
+        />
+        <img
+            *ngIf="activeItem === enum.Bokser"
+            src="./../../../assets/images/forpakningerBilder/bokser/P1090305.png"
+        />
+        <img
+            *ngIf="activeItem === enum.Blister"
+            src="./../../../assets/images/forpakningerBilder/blister/P1090859.png"
+        />
+    </div>
 </div>

@@ -1,48 +1,37 @@
 .logo {
-  height: 130%;
+    height: 130%;
 }
 
-.dropdown {
-  cursor: pointer;
+.nav-item {
+    cursor: pointer;
 }
 
 .navbar {
-  margin-bottom: 0;
-  border-radius: unset;
+    margin-bottom: 0;
+    border-radius: unset;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
 }
 
 .dropdown-list {
-  background-color: lightgrey;
+    background-color: lightgrey;
 }
 
 .navbar.navbar-default {
-  background-color: white;
+    background-color: white;
 }
 
-.nav.navbar-nav li a {
-  color: #37515a;
-  width: 100%;
-  text-transform: uppercase;
+.nav.navbar-nav li .nav-item {
+    color: #37515a;
+    width: 100%;
+    text-transform: uppercase;
 }
 
-.navbar-default .navbar-nav > .active > a {
-  border-right: none;
-  text-decoration: underline;
-  background-color: transparent;
-}
-
-.triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
-}
-
-.triangle-up {
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #555;
+.navbar-default .navbar-nav > .active > .nav-item {
+    border-right: none;
+    text-decoration: underline;
+    background-color: transparent;
 }

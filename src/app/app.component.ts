@@ -36,6 +36,7 @@ export class AppComponent implements OnInit {
             if (event instanceof NavigationEnd) {
                 this.activeUrl = this.router.url;
                 this.getBackgroundClass();
+                window.scrollTo(0, 0);
                 console.log(this.activeUrl);
             }
         });

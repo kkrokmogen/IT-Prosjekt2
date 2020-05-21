@@ -18,6 +18,7 @@ import { ProductGroupsComponent } from './services/product-groups/product-groups
 import { ProductDevelopmentInfoComponent } from './services/product-development/product-development-info/product-development-info.component';
 import { PackagingInfoComponent } from './services/packaging/packaging-info/packaging-info.component';
 import { ProductGroupsInfoComponent } from './services/product-groups/product-groups-info/product-groups-info.component';
+import { NavTjenesterDropdownComponent } from './nav/nav-tjenester-dropdown/nav-tjenester-dropdown.component';
 
 
 
@@ -37,7 +38,8 @@ import { ProductGroupsInfoComponent } from './services/product-groups/product-gr
     ProductGroupsComponent,
     ProductDevelopmentInfoComponent,
     PackagingInfoComponent,
-    ProductGroupsInfoComponent
+    ProductGroupsInfoComponent,
+    NavTjenesterDropdownComponent
   ],
   imports: [
     BrowserModule,

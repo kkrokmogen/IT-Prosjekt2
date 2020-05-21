@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <a class="nav-item dropdown" (click)="toggleExpand()"
+        >Tjenester<span
+            class="triangle"
+            [ngClass]="{
+                'triangle-down': !isExpanded,
+                'triangle-up': isExpanded
+            }"
+        ></span
+    ></a>
+    <ul *ngIf="isExpanded">
+        <li routerLinkActive="active">
+            <a
+                routerLink="tjenester/produktutvikling"
+                class="nav-item"
+                role="button"
+                >Produktutvikling</a
+            >
+        </li>
+        <li routerLinkActive="active">
+            <a
+                routerLink="tjenester/produktgrupper"
+                class="nav-item"
+                role="button"
+                >Produktgrupper</a
+            >
+        </li>
+        <li routerLinkActive="active">
+            <a routerLink="tjenester/forpakning" class="nav-item" role="button"
+                >Forpakning</a
+            >
+        </li>
+    </ul>
+</div>

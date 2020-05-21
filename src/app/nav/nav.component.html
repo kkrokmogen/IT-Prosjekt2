@@ -1,38 +1,43 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button
-        type="button"
-        class="navbar-toggle"
-        (click)="collapse = !collapse"
-      >
-        <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
-      </button>
-      <a routerLink="/" class="navbar-brand">
-        <img src="../assets/images/logo.png" class="logo" alt="Logo"
-      /></a>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button
+                type="button"
+                class="navbar-toggle"
+                (click)="collapse = !collapse"
+            >
+                <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+            </button>
+            <a routerLink="/" class="navbar-brand">
+                <img src="../assets/images/logo.png" class="logo" alt="Logo"
+            /></a>
+        </div>
+        <div
+            class="navbar-collapse"
+            [class.collapse]="collapse"
+            (window:resize)="collapse = true"
+        >
+            <ul class="nav navbar-nav navbar-right">
+                <li *ngIf="collapse" routerLinkActive="active">
+                    <a routerLink="tjenester" class="nav-item" role="button"
+                        >Tjenester
+                    </a>
+                </li>
+                <ng-container *ngIf="!collapse">
+                    <app-nav-tjenester-dropdown></app-nav-tjenester-dropdown>
+                </ng-container>
+
+                <li routerLinkActive="active">
+                    <a routerLink="om-oss" class="nav-item" role="button"
+                        >Om oss
+                    </a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="kontakt" class="nav-item" role="button"
+                        >Kontakt
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div
-      class="navbar-collapse"
-      [class.collapse]="collapse"
-      (window:resize)="collapse = true"
-    >
-      <ul class="nav navbar-nav navbar-right">
-        <li routerLinkActive="active">
-          <a
-            routerLink="tjenester"
-            class="dropdown"
-            role="button"
-            >Tjenester
-          </a>
-        </li>
-        <li routerLinkActive="active">
-          <a routerLink="om-oss" class="dropdown" role="button">Om oss </a>
-        </li>
-        <li routerLinkActive="active">
-          <a routerLink="kontakt" class="dropdown" role="button">Kontakt </a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </nav>
