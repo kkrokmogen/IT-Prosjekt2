@@ -5,7 +5,7 @@
 .bg-main {
     position: relative;
     width: 100%;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -29,6 +29,14 @@
 }
 
 .bg-about {
+    background-image: url("../assets/images/tegne.png");
+    background-size: cover;
+    background-size: 80em;
+    
+
+}
+
+.bg-kontakt {
     background-image: url("../assets/images/miljøBilder/P1090392.png");
     background-size: cover;
 }

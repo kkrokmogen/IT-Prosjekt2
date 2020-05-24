@@ -24,16 +24,26 @@
                     </a>
                 </li>
                 <ng-container *ngIf="!collapse">
-                    <app-nav-tjenester-dropdown></app-nav-tjenester-dropdown>
+                    <app-nav-tjenester-dropdown
+                        (onNavigate)="collapse = true"
+                    ></app-nav-tjenester-dropdown>
                 </ng-container>
 
                 <li routerLinkActive="active">
-                    <a routerLink="om-oss" class="nav-item" role="button"
+                    <a
+                        routerLink="om-oss"
+                        class="nav-item"
+                        role="button"
+                        (click)="collapse = true"
                         >Om oss
                     </a>
                 </li>
                 <li routerLinkActive="active">
-                    <a routerLink="kontakt" class="nav-item" role="button"
+                    <a
+                        routerLink="kontakt"
+                        class="nav-item"
+                        role="button"
+                        (click)="collapse = true"
                         >Kontakt
                     </a>
                 </li>

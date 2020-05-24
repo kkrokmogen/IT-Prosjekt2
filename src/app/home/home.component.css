@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 422px) {
     .background-image span {
-        bottom: 20px;
+        bottom: 10px;
     }
 }
 
@@ -27,13 +27,16 @@
     height: 100%;
     object-fit: cover;
 }
+
 .logoboks {
     width:100%;
     background-color: #718C80;
     color:#fff;
     padding-top: 20px;
-    height: 20%;
+    min-height: 20%;
+    display: flex;
 } 
+
 .logo{
     width: 70px;
 }

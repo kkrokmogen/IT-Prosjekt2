@@ -8,8 +8,4 @@ import { Component } from '@angular/core';
 export class NavComponent {
   public collapse: boolean = true;
   public dropdownOpen: boolean = false;
-
-  public toggleDropdown() {
-    this.dropdownOpen = !this.dropdownOpen;
-  }
 }

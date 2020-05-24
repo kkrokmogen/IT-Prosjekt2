@@ -14,6 +14,7 @@
                 routerLink="tjenester/produktutvikling"
                 class="nav-item"
                 role="button"
+                (click)="collapse()"
                 >Produktutvikling</a
             >
         </li>
@@ -22,11 +23,16 @@
                 routerLink="tjenester/produktgrupper"
                 class="nav-item"
                 role="button"
+                (click)="collapse()"
                 >Produktgrupper</a
             >
         </li>
         <li routerLinkActive="active">
-            <a routerLink="tjenester/forpakning" class="nav-item" role="button"
+            <a
+                routerLink="tjenester/forpakning"
+                class="nav-item"
+                role="button"
+                (click)="collapse()"
                 >Forpakning</a
             >
         </li>

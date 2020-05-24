@@ -6,8 +6,12 @@ h2 {
 }
 
 @media only screen and (max-width: 767px) {
-  .nav {
+  .desktop {
     display: none;
+  }
+
+  .service-top {
+    padding: 0 !important;
   }
 }
  

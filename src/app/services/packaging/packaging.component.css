@@ -6,13 +6,28 @@
     position: absolute;
     top: -100px;
     left: 0;
-    bottom:0;
+    bottom: 0;
     width: 100%;
-    height: 100vh;
     background-color: green;
     z-index: -10;
 }
 
+@media only screen and (max-width: 991px) {
+    .desktop {
+        display: none;
+    }
+}
+
+.bilder-mobil {
+    width: 100%;
+    height: 300px;
+}
+
+@media only screen and (min-width: 992px) {
+    .bilder-mobil {
+        display: none;
+    }
+}
 
 /*
 .bg-flaske {

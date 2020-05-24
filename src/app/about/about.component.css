@@ -1,25 +1,36 @@
-.avsnitt{
-    color: white;
-    padding-left: 2em;
+.about {
+    padding: 2em;
 }
 
-.tekstinfo{
-    padding-top: 2em;
+.avsnitt{
+    color: white;
 }
 
 .container-overskrift{
     font-size: 4em;
     color: white;
-    padding-left: 0.4em;
-    padding-top: 0.2em;
+}
+
+@media only screen and (max-width: 767px) {
+    .container-overskrift {
+        font-size: 2em;
+    }
 }
 
 .slagord{
     margin-top: 2em;
     font-size: 2em;
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .slagord {
+        font-size: 20px;
+        
+    }
 }
 
 .innhold{
-    background-color:  #718C80; 
-    height: calc(100vh - 50px);
+    background-color: #718C80; 
 }
+

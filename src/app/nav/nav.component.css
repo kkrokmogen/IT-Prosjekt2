@@ -14,6 +14,7 @@
     left: 0;
     right: 0;
     z-index: 300;
+
 }
 
 .dropdown-list {
@@ -22,6 +23,7 @@
 
 .navbar.navbar-default {
     background-color: white;
+    opacity: 93%;
 }
 
 .nav.navbar-nav li .nav-item {

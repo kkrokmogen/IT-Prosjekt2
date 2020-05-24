@@ -23,6 +23,9 @@ export class AppComponent implements OnInit {
         } else if (this.activeUrl.includes('om-oss')) {
             this.backGroundClass = 'bg-about';
             this.bgOpacity = true;
+        } else if (this.activeUrl.includes('kontakt')) {
+            this.backGroundClass = 'bg-kontakt';
+            this.bgOpacity = true;
         } else if (this.activeUrl.includes('produktutvikling')) {
             this.backGroundClass = 'bg-produktutvikling';
             this.bgOpacity = true;
