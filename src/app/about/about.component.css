@@ -11,17 +11,13 @@
     color: white;
 }
 
-@media only screen and (max-width: 767px) {
-    .container-overskrift {
-        font-size: 2em;
-    }
-}
 
 .slagord{
     margin-top: 2em;
     font-size: 2em;
     
 }
+
 
 @media only screen and (max-width: 767px) {
     .slagord {
@@ -34,3 +30,9 @@
     background-color: #718C80; 
 }
 
+@media only screen and (max-width: 767px) {
+    .container-overskrift{
+        font-size: 2em;
+    }
+        
+}

@@ -22,18 +22,12 @@
     background-color: lightgrey;
 }
 
-.navbar.navbar-default {
-    background-color: white;
-    opacity: 93%;
-    
-}
+
 
 .nav.navbar-nav li .nav-item {
     color: #37515a;
     width: 100%;
     text-transform: uppercase;
-    
-   
 }
 
 .navbar-default .navbar-nav > .active > .nav-item {

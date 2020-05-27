@@ -32,6 +32,8 @@
     background-image: url("../assets/images/tegne.png");
     background-size: cover;
     background-size: 80em;
+    background-attachment: fixed;
+    height: 190VH;
     
 
 }
@@ -53,3 +55,26 @@
     background-color: var(--color-default);
     height: 100%;
 }
+
+.bg-about .bg-overlay{
+    height: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+    .bg-about .bg-overlay{
+        height: 60em;
+        background-size: 20em;
+     
+    }       
+}
+
+@media only screen and (max-width: 767px) {
+    .bg-about{
+        background-size: 55em;
+     
+    }       
+}
+
+
+
+
