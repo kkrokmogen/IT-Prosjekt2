@@ -14,6 +14,7 @@
     left: 0;
     right: 0;
     z-index: 300;
+    opacity: unset;
 
 }
 
@@ -24,12 +25,15 @@
 .navbar.navbar-default {
     background-color: white;
     opacity: 93%;
+    
 }
 
 .nav.navbar-nav li .nav-item {
     color: #37515a;
     width: 100%;
     text-transform: uppercase;
+    
+   
 }
 
 .navbar-default .navbar-nav > .active > .nav-item {
