@@ -1,27 +1,29 @@
-# Optipharma
+# Optipharma 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+# For å kjøre programmet:
 
-## Development server
+1. Du behøver Angular CLI (https://cli.angular.io/) og Node JS (https://nodejs.org/en/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Last ned Node JS fra https://nodejs.org/en/ for å få tilgang til npm på din maskin.
 
-## Code scaffolding
+Når angular er lastet ned på maskinen din kan du åpne terminalen på mac eller command prompt på windows.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Last ned angular CLI ved å kjøre ditt operativsystems commandolinje:
+Mac/Lindux: sudo npm install --save @angular/cli@latest
+Windows: npm install --save @angular/cli@latest
 
-## Build
+Skriv inn din maskins passord og enter.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Da vil Angular CLI lastes ned fra Node package manager.
 
-## Running unit tests
+Dersom error oppstår kan du ignorere de så lenge Angular ble suksesfult opplastet.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Nagiver inn til mappen hvor prosjektet er lagret
 
-## Running end-to-end tests
+Eks: cd NAVIGASJON_TIL_MAPPEN/IT-Prosjekt2
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+4. Kjør programmet ved å benytte commandolinjen:
+`ng serve`. Deretter naviger til `http://localhost:4200/`. Applikasjonen vil automatisk lastes inn på nytt hvis du endrer noen av src-filene. 
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Videre hjelp
+For mer hjelp på Angular CLI bruk ng help.

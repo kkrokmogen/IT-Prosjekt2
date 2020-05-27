@@ -10,7 +10,6 @@ import { ProductDevelopmentComponent } from './services/product-development/prod
 import { PackagingComponent } from './services/packaging/packaging.component';
 
 const appRoutes: Routes = [
-    //{ path: '', redirectTo: 'hjem', pathMatch: 'full'},
     { path: '', component: HomeComponent },
     {
         path: 'tjenester', component: ServicesComponent, children: [
@@ -20,8 +19,9 @@ const appRoutes: Routes = [
             {
                 path: 'produktutvikling', component: ProductDevelopmentComponent
             },
-            { path: 'produktgrupper', component: ProductGroupsComponent },
-            { path: 'forpakning', component: PackagingComponent }
+            {   path: 'produktgrupper', component: ProductGroupsComponent },
+
+            {   path: 'forpakning', component: PackagingComponent }
         ]
     },
     { path: 'om-oss', component: AboutComponent },
